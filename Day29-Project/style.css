@@ -1,0 +1,13 @@
+h1{
+    animation: fadeIn 2s linear infinite;
+}
+div{
+    animation: fadeIn 2s linear infinite;
+}
+
+@keyframes fadeIn {
+    0% {  opacity: 0;}
+    40% {  opacity: 1; }
+    80% {  opacity: 1; }
+    100% {  opacity: 0;}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Validating Web Form</h1>
+
+      <form>
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" name="fname" required /><br />
+        <p class="warning-p" id="name-warning">First name must be alphanumeric and contain 3 - 16 charachters</p>
+        
+        <label for="lname">Last name</label><br />
+        <input type="text" id="lname" name="lname" required /><br />
+        <p class="warning-p" id="lastName-warning">Last name must be alphanumeric and contain 3 - 16 charachters</p>
+        
+        <label for="email">Email</label><br />
+        <input type="text" id="email" name="email" required /><br />
+        <p class="warning-p" id="email-warning">Email must be a valid address, e.g. example@example.com</p>
+
+        <label for="password">Password</label><br />
+        <input type="password" id="password" name="password" required /><br />
+        <p class="warning-p" id="password-warning">Password must be alphanumeric (@,_ and - are also allowed) and between 6 - 20 charachters</p>
+
+        <label for="telephone">Telephone</label><br />
+        <input type="number" id="telephone" name="telephone" required /><br />
+        <p class="warning-p" id="telephone-warning">A valid Telephone number (11 digits and 333-333-3334)</p>
+
+        <label for="your-bio">Your bio</label><br />
+        <input type="textarea" id="your-bio" name="your-bio" required /><br />
+        <p class="warning-p" id="your-bio-warning">Bio must contain only lowercase letters, underscores, hyphens and be 8 - 50 charachters</p>
+
+        <input type="submit" id="form-button" value="Submit" />
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

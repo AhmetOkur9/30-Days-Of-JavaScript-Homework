@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="header-div">
+        <h1>World Countries Data</h1>
+        <h4>Currentl we have 250 countries</h4>
+    </div>
+    <div class="container" id="settings-div">
+        <div id="search-bar-div">
+            <input id="search-bar" type="text" placeholder="Search countries by name, city and languages">
+        </div>
+        <div id="button-div">
+            <button class="button" id="name-btn">Name</button>
+            <button class="button" id="capital-btn">Capital</button>
+            <button class="button" id="population-btn">Population</button>
+            <button id="graphic-btn"><i class="fa-solid fa-list fa-2xl"></i></button>
+        </div>
+    </div>
+    <div class="container" id="info-div">
+
+    </div>
+    <div class="container" id="canvas-div">
+
+    </div>
+    <script src="data/data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
